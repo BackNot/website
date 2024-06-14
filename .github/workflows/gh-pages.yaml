@@ -40,7 +40,7 @@ jobs:
           RELEASE: "v${{ steps.semver_parser.outputs.fullversion }}"
         run: |
           echo "We got a new SAMM release: v${{ steps.semver_parser.outputs.fullversion }}${RELEASE}"
-          hugo mod get "github.com/owaspsamm/core@markdown/${RELEASE}"
+          hugo mod get "github.com/BackNot/core@markdown/${RELEASE}"
           cat go.mod 
       # Do not commit files until we can verify the previous steps are working
       - name: Commit updated files to git
@@ -50,28 +50,28 @@ jobs:
           add: '["go.mod", "go.sum"]'
           default_author: github_actions
           message: 'New SAMM release: ${{ github.event.client_payload.release }}'
-  deploy:
-    runs-on: ubuntu-latest
-    steps:
-      - uses: actions/checkout@v3
-        with:
-          submodules: true # Fetch Hugo themes (true OR recursive)
-          fetch-depth: 0 # Fetch all history for .GitInfo and .Lastmod
-      - uses: actions/cache@v3
-        with:
-          path: /tmp/hugo_cache
-          key: ${{ runner.os }}-hugomod-${{ hashFiles('**/go.sum') }}
-          restore-keys: |
-            ${{ runner.os }}-hugomod-
-      - name: Setup Hugo
-        uses: peaceiris/actions-hugo@v2
-        with:
-          hugo-version: ${{ env.hugo_version }}
-          extended: true
-      - name: Build
-        run: hugo --gc --minify -v --cleanDestinationDir --environment production
-      - name: Deploy
-        uses: peaceiris/actions-gh-pages@v3
-        with:
-          github_token: ${{ secrets.GITHUB_TOKEN }}
-          publish_dir: ./public
+  # deploy:
+  #   runs-on: ubuntu-latest
+  #   steps:
+  #     - uses: actions/checkout@v3
+  #       with:
+  #         submodules: true # Fetch Hugo themes (true OR recursive)
+  #         fetch-depth: 0 # Fetch all history for .GitInfo and .Lastmod
+  #     - uses: actions/cache@v3
+  #       with:
+  #         path: /tmp/hugo_cache
+  #         key: ${{ runner.os }}-hugomod-${{ hashFiles('**/go.sum') }}
+  #         restore-keys: |
+  #           ${{ runner.os }}-hugomod-
+  #     - name: Setup Hugo
+  #       uses: peaceiris/actions-hugo@v2
+  #       with:
+  #         hugo-version: ${{ env.hugo_version }}
+  #         extended: true
+  #     - name: Build
+  #       run: hugo --gc --minify -v --cleanDestinationDir --environment production
+  #     - name: Deploy
+  #       uses: peaceiris/actions-gh-pages@v3
+  #       with:
+  #         github_token: ${{ secrets.GITHUB_TOKEN }}
+  #         publish_dir: ./public
