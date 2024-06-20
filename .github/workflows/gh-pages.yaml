@@ -44,7 +44,7 @@ jobs:
           cat go.mod 
       # Do not commit files until we can verify the previous steps are working
       - name: Commit updated files to git
-        if: false
+        # if: false
         uses: EndBug/add-and-commit@v9
         with:
           add: '["go.mod", "go.sum"]'
