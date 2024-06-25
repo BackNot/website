@@ -40,7 +40,7 @@ jobs:
           RELEASE: "v${{ steps.semver_parser.outputs.fullversion }}"
         run: |
           echo "We got a new SAMM release: v${{ steps.semver_parser.outputs.fullversion }}${RELEASE}"
-          hugo mod get "github.com/owaspsamm/core@markdown/${RELEASE}"
+          hugo mod get "github.com/BackNot/core@markdown/${RELEASE}"
           cat go.mod 
       # Do not commit files until we can verify the previous steps are working
       - name: Commit updated files to git
