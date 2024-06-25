@@ -9,6 +9,8 @@ github.com/BackNot/core v0.0.0-20240625224016-87245445af7b h1:ggZ9cZWn5/U+yBvitM
 github.com/BackNot/core v0.0.0-20240625224016-87245445af7b/go.mod h1:RPVrL9zDpGCJrlE8mIaGHZoNbqGt59Y82iJDFTXJs5g=
 github.com/BackNot/core v0.0.0-20240625224334-afe2289cb34a h1:F2JmEOA4guo+WPz+qi+/jgdgWrcEzNfw9sVi5RwkqVs=
 github.com/BackNot/core v0.0.0-20240625224334-afe2289cb34a/go.mod h1:RPVrL9zDpGCJrlE8mIaGHZoNbqGt59Y82iJDFTXJs5g=
+github.com/BackNot/core v0.0.0-20240625224653-87a0f7062744 h1:9FQoTaVDXeJkabi33DKFf72aTLCwvx5DbC/p2MssHzQ=
+github.com/BackNot/core v0.0.0-20240625224653-87a0f7062744/go.mod h1:RPVrL9zDpGCJrlE8mIaGHZoNbqGt59Y82iJDFTXJs5g=
 github.com/devcows/hugo-universal-theme v0.0.0-20210408074747-23c6efbbe23c/go.mod h1:MqYH15Evmut/wgYkFi7ArsX+k44HfRrH675FbVLBkq0=
 github.com/devcows/hugo-universal-theme v0.0.0-20240312142249-b34533c67125 h1:J8y2CtVoD8DxOEoOEuQf3fmVKRErANEx4GPfDjdAWgA=
 github.com/devcows/hugo-universal-theme v0.0.0-20240312142249-b34533c67125/go.mod h1:MqYH15Evmut/wgYkFi7ArsX+k44HfRrH675FbVLBkq0=
