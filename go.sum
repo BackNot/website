@@ -14,6 +14,8 @@ github.com/BackNot/core v0.0.0-20240625221731-6566ad555915 h1:buuAv/a+nvXVJnZnWQ
 github.com/BackNot/core v0.0.0-20240625221731-6566ad555915/go.mod h1:RPVrL9zDpGCJrlE8mIaGHZoNbqGt59Y82iJDFTXJs5g=
 github.com/BackNot/core v0.0.0-20240625221959-b797aff45740 h1:DjsIV3FPdTy3BtvAWBFcynEVPvVNlM13l54E/MiTaOY=
 github.com/BackNot/core v0.0.0-20240625221959-b797aff45740/go.mod h1:RPVrL9zDpGCJrlE8mIaGHZoNbqGt59Y82iJDFTXJs5g=
+github.com/BackNot/core v0.0.0-20240625222356-d3592fd46e3a h1:wfb8Dibr0WX4DBBZd36wVJD9iUIJwBQFSeW367SzQnQ=
+github.com/BackNot/core v0.0.0-20240625222356-d3592fd46e3a/go.mod h1:RPVrL9zDpGCJrlE8mIaGHZoNbqGt59Y82iJDFTXJs5g=
 github.com/devcows/hugo-universal-theme v0.0.0-20210408074747-23c6efbbe23c h1:78lowsVU99VRlsmwHVTNnGiVRfDTawQK1cpaysHF3Ic=
 github.com/devcows/hugo-universal-theme v0.0.0-20210408074747-23c6efbbe23c/go.mod h1:MqYH15Evmut/wgYkFi7ArsX+k44HfRrH675FbVLBkq0=
 github.com/owaspsamm/core v0.0.0-20210520122448-8de72e41633a h1:RNba5qaMQd/o6b+y9Q177VOqDYsLhCFHMuSd+alS5qM=
