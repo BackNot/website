@@ -3,6 +3,6 @@ module github.com/OWASPsamm/website
 go 1.15
 
 require (
-	github.com/BackNot/core v0.0.0-20240625224653-87a0f7062744 // indirect
+	github.com/BackNot/core v0.0.0-20240625225047-64771f407697 // indirect
 	github.com/devcows/hugo-universal-theme v0.0.0-20240312142249-b34533c67125 // indirect
 )
