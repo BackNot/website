@@ -27,7 +27,7 @@ paginate = 10
 
 [[module.imports]]
   # content
-  path = "github.com/owaspsamm/core"
+  path = "github.com/BackNot/core"
   disabled = false
 
   [[module.imports.mounts]]
