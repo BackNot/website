@@ -94,8 +94,6 @@ jobs:
         run: |
           echo "${{needs.updateHugoMod.outputs.goMod}}" > go.mod
           echo "${{needs.updateHugoMod.outputs.goSum}}" > go.sum
-          echo ${{needs.updateHugoMod.outputs.goMod}}
-          echo ${{needs.updateHugoMod.outputs.goSum}}
       - uses: actions/cache@v3
         with:
           path: /tmp/hugo_cache
