@@ -7,7 +7,7 @@ image: /img/people/Jamil_Ahmed.jpeg
 affiliation: Fortis Games
 role: Senior Application Security Engineer
 abstract: |
-    Capability Maturity Model (CMM)  
+    CCCapability Maturity Model (CMM)  
     The Capability Maturity Model (CMM) has advanced to effectively evaluate the maturity of software and the Software Development Life Cycle (SDLC). While the importance of CMM for SDLC is clear, a functional CMM specifically designed for the Secure Software Development Lifecycle (SSDLC) across all five levels is not widely recognized nor adopted within the application security community and software engineering teams.
     CMM aims to assess an organization’s capabilities through five levels: Initial, Managed, Defined, Quantitatively Managed, and Optimized.
 
