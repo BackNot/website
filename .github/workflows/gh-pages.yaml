@@ -85,11 +85,11 @@ jobs:
         with:
           submodules: true # Fetch Hugo themes (true OR recursive)
           fetch-depth: 0 # Fetch all history for .GitInfo and .Lastmodd
-      - name: Get hugo mod files
-        if: ${{ needs.updateHugoMod.result == 'success' }}
-        run: |
-          echo "${{needs.updateHugoMod.outputs.goMod}}" > go.mod
-          echo "${{needs.updateHugoMod.outputs.goSum}}" > go.sum
+      # - name: Get hugo mod files
+      #   if: ${{ needs.updateHugoMod.result == 'success' }}
+      #   run: |
+      #     echo "${{needs.updateHugoMod.outputs.goMod}}" > go.mod
+      #     echo "${{needs.updateHugoMod.outputs.goSum}}" > go.sum
       - uses: actions/cache@v3
         with:
           path: /tmp/hugo_cache
