@@ -106,7 +106,7 @@ jobs:
           hugo-version: ${{ env.hugo_version }}
           extended: true
       - name: Build
-        run: hugo --gc --minify -v --cleanDestinationDir --environment production
+        run: hugo --gc --minify --logLevel info --cleanDestinationDir --environment production
       - name: Deploy
         uses: peaceiris/actions-gh-pages@v3
         with:
