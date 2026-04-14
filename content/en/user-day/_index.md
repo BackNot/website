@@ -1,7 +1,7 @@
 ---
 title: User Day
 layout: main-page
-description: User Day 2025
+description: User Day 2026
 keywords: ["about","what is","questions", "event", "user"]
 ---
 
@@ -13,7 +13,11 @@ This event brings together practitioners, teams, and experts working with SAMM a
 
 Registration is now open. <b> {{< external-link "https://owasp.glueup.com/event/162243/register/" "Secure your spot.">}} </b>
 
-We’re inviting the community to <b> {{< external-link "https://forms.gle/33Zmd3dKAkt4JMvS9" "submit presentation proposals">}} </b>.
+### Agenda
+
+Here's the line-up of talks and discussions for the day. Click any title for more details on the talk and the speaker.
+
+{{< user_day_agenda_2026_vienna >}}
 
 <br/>
 
