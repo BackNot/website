@@ -3408,7 +3408,7 @@ fieldset[disabled] .navbar-default .btn-link:focus {
 /* scaffolding */
 body {
   font-family: "Roboto", Helvetica, Arial, sans-serif;
-  font-size: 14px;
+  font-size: 16px;
   line-height: 1.42857143;
   color: #555555;
 }
@@ -3893,9 +3893,14 @@ a.list-group-item.active > .badge,
   margin-bottom: 30px;
 }
 
+.samm-content-with-space .buttons-div {
+  margin-bottom: 10px;
+}
+
 .samm-page-content div {
   padding-bottom: 30px;
 }
+
 
 .samm-page-content th {
     text-align: left;
@@ -4159,9 +4164,9 @@ a.list-group-item.active > .badge,
   padding-left: 40px;
 }
 
-@media screen and (max-width: 600px) {
+@media screen and (max-width: 820px) {
   .img-left {
-    padding: 20px;
+    display: none;
   }
   .img-right {
     display: none;
