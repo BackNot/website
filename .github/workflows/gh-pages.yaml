@@ -39,8 +39,8 @@ jobs:
           fi
       - uses: actions/checkout@v6
         with:
-          submodules: true # Fetch Hugo themes (true OR recursive)
-          fetch-depth: 0 # Fetch all history for .GitInfo and .Lastmod
+          submodules: true
+          fetch-depth: 0
           persist-credentials: false
       - name: Setup Hugo
         uses: peaceiris/actions-hugo@v3
@@ -55,19 +55,6 @@ jobs:
           echo "We got a new SAMM release: v${{ steps.semver_parser.outputs.fullversion }}${RELEASE}"
           hugo mod get "github.com/BackNot/core@markdown/${RELEASE}"
           cat go.mod
-      - name: Passing hugo mod files
-        id: modFiles
-        run: |
-            {
-              echo 'goMod<<EOF'
-              cat go.mod
-              echo EOF
-            } >> "$GITHUB_OUTPUT"
-            {
-              echo 'goSum<<EOF'
-              cat go.sum
-              echo EOF
-            } >> "$GITHUB_OUTPUT"
       - name: Set commit message
         run: |
           if [ -z "${{ github.event.client_payload.release }}" ]; then
@@ -94,17 +81,12 @@ jobs:
   deploy:
     runs-on: ubuntu-latest
     needs: updateHugoMod
-    if: ${{ always() && (needs.updateHugoMod.result == 'success' || needs.updateHugoMod.result == 'skipped') }}
+    if: ${{ always() && github.event_name != 'repository_dispatch' && (needs.updateHugoMod.result == 'success' || needs.updateHugoMod.result == 'skipped') }}
     steps:
       - uses: actions/checkout@v6
         with:
-          submodules: true # Fetch Hugo themes (true OR recursive)
-          fetch-depth: 0 # Fetch all history for .GitInfo and .Lastmod
-      - name: Get hugo mod files
-        if: ${{ needs.updateHugoMod.result == 'success' }}
-        run: |
-          echo "${{needs.updateHugoMod.outputs.goMod}}" > go.mod
-          echo "${{needs.updateHugoMod.outputs.goSum}}" > go.sum
+          submodules: true
+          fetch-depth: 0
       - uses: actions/cache@v5
         with:
           path: /tmp/hugo_cache
