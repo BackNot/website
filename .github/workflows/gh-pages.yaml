@@ -17,8 +17,6 @@ jobs:
   updateHugoMod:
     runs-on: ubuntu-latest
     outputs:
-      goMod: ${{ steps.modFiles.outputs.goMod }}
-      goSum: ${{ steps.modFiles.outputs.goSum }}
       pr_number: ${{ steps.cpr.outputs.pull-request-number }}
     steps:
       - name: Parse semver string
