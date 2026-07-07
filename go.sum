@@ -4,6 +4,8 @@ github.com/BackNot/core v0.0.0-20260706091148-5459b663746d h1:mT8QWNn2XhwreQD7oR
 github.com/BackNot/core v0.0.0-20260706091148-5459b663746d/go.mod h1:RPVrL9zDpGCJrlE8mIaGHZoNbqGt59Y82iJDFTXJs5g=
 github.com/BackNot/core v0.0.0-20260707083949-dbeaf8a1b1cd h1:y7C9krlRHlMT7CveZXIyrCilu28SRefjhpXEIqIrqLY=
 github.com/BackNot/core v0.0.0-20260707083949-dbeaf8a1b1cd/go.mod h1:RPVrL9zDpGCJrlE8mIaGHZoNbqGt59Y82iJDFTXJs5g=
+github.com/BackNot/core v0.0.0-20260707091608-c523af3cf699 h1:9vUeYFFrWfYsOt1OfMPSvutGD+Dr+k10GgNxrOP9Q4I=
+github.com/BackNot/core v0.0.0-20260707091608-c523af3cf699/go.mod h1:RPVrL9zDpGCJrlE8mIaGHZoNbqGt59Y82iJDFTXJs5g=
 github.com/owaspsamm/core v0.0.0-20240920140752-f1344eef9856 h1:CgqrAaIlyE4KgnflQPjVSRvg234cn/2c4Zth2trDqqw=
 github.com/owaspsamm/core v0.0.0-20240920140752-f1344eef9856/go.mod h1:ECnrbqPPh1OnAru4vRFzMou6Bx2xBemoVDZRTcgYYJw=
 github.com/owaspsamm/core v2.1.0+incompatible h1:/TaPFIw1eVeTOsZZvx7mN3WZrm0Gzg2dsBRN+0tLehY=
