@@ -16,19 +16,17 @@ env:
 jobs:
   updateHugoMod:
     runs-on: ubuntu-latest
-    if: github.event_name == 'repository_dispatch' || github.event_name == 'workflow_dispatch'
+    if: github.event_name == 'repository_dispatch'
     outputs:
       pr_number: ${{ steps.cpr.outputs.pull-request-number }}
     steps:
       - name: Parse semver string
-        if: github.event_name == 'repository_dispatch'
         id: semver_parser
         uses: booxmedialtd/ws-action-parse-semver@v1
         with:
           input_string: ${{ github.event.client_payload.release }}
           version_extractor_regex: 'v(.*)$'
       - name: Check release semver sanity
-        if: github.event_name == 'repository_dispatch'
         env:
           RELEASE: "v${{ steps.semver_parser.outputs.fullversion }}"
         run: |
@@ -47,7 +45,6 @@ jobs:
           hugo-version: ${{ env.hugo_version }}
           extended: true
       - name: Get new release and commit to main
-        if: github.event_name == 'repository_dispatch'
         env:
           RELEASE: "v${{ steps.semver_parser.outputs.fullversion }}"
         run: |
