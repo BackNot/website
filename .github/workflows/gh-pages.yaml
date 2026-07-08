@@ -13,8 +13,8 @@ on:
   workflow_dispatch:
     inputs:
       release:
-        description: 'SAMM release version (e.g. v1.2.3) — leave empty to just redeploy'
-        required: false
+        description: 'SAMM release version (e.g. v1.2.3)'
+        required: true
         type: string
 env:
   hugo_version: '0.157.0'
@@ -23,7 +23,7 @@ jobs:
     runs-on: ubuntu-latest
     if: |
       github.event_name == 'repository_dispatch' ||
-      (github.event_name == 'workflow_dispatch' && inputs.release != '')
+      github.event_name == 'workflow_dispatch'
     outputs:
       pr_number: ${{ steps.cpr.outputs.pull-request-number }}
     steps:
@@ -84,7 +84,10 @@ jobs:
   deploy:
     runs-on: ubuntu-latest
     needs: updateHugoMod
-    if: ${{ always() && github.event_name != 'repository_dispatch' && (needs.updateHugoMod.result == 'success' || needs.updateHugoMod.result == 'skipped') }}
+    if: ${{ always() &&
+      github.event_name != 'repository_dispatch' &&
+      github.event_name != 'workflow_dispatch' &&
+      (needs.updateHugoMod.result == 'success' || needs.updateHugoMod.result == 'skipped') }}
     steps:
       - uses: actions/checkout@v6
         with:
