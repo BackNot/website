@@ -31,7 +31,7 @@ jobs:
           RELEASE: "v${{ steps.semver_parser.outputs.fullversion }}"
         run: |
           if [ "${RELEASE}" = "v" ]; then
-            echo "::error title={Bad Semver}::{Release version is not semver compatiblee}"
+            echo "::error title={Bad Semver}::{Release version is not semver compatible}"
             exit 1
           fi
       - uses: actions/checkout@v6
