@@ -18,7 +18,7 @@ maturity_levels:
     level1:
         level: 1
         benefit: |
-            Basic security principles available to product teamss
+            Basic security principles available to product teamsss
         activity: |
             During design, technical staff on the product team use a short checklist of security principles. Typically, security principles include defense in depth, securing the weakest link, use of secure defaults, simplicity in design of security functionality, secure failure, balance of security and usability, running with least privilege, avoidance of security by obscurity, etc.
 
