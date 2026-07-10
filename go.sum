@@ -2,3 +2,7 @@ github.com/BackNot/core v0.0.0-20260708080126-232886a972ab h1:xOSIUZH8IyLnZ8mfk2
 github.com/BackNot/core v0.0.0-20260708080126-232886a972ab/go.mod h1:RPVrL9zDpGCJrlE8mIaGHZoNbqGt59Y82iJDFTXJs5g=
 github.com/BackNot/core v0.0.0-20260710074317-90f7a924ff8a h1:ltkpXWr7TxyvIDQ1ZPTA5P9rllRnS1K5aUAeedclbXw=
 github.com/BackNot/core v0.0.0-20260710074317-90f7a924ff8a/go.mod h1:RPVrL9zDpGCJrlE8mIaGHZoNbqGt59Y82iJDFTXJs5g=
+github.com/BackNot/core v0.0.0-20260710085317-dec9c691a5d5 h1:miuXHzZeRz2DrC2CG3m+9J/Mk3F7wxmFWz5RNKx8gkc=
+github.com/BackNot/core v0.0.0-20260710085317-dec9c691a5d5/go.mod h1:RPVrL9zDpGCJrlE8mIaGHZoNbqGt59Y82iJDFTXJs5g=
+github.com/BackNot/core v12.0.4+incompatible h1:WM2DG1AB7jalaOGE29TvkhfPgqXHCGDn21ecWq6x+xw=
+github.com/BackNot/core v12.0.4+incompatible/go.mod h1:RPVrL9zDpGCJrlE8mIaGHZoNbqGt59Y82iJDFTXJs5g=
